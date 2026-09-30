@@ -3,151 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f6f8">
-  <meta name="description" content="GDGoC KNU 신입 부원을 위한 서비스 기획과 협업 교육 자료">
-  <title>같이 만든다는 것은 같이 이해하는 것 · GDGoC KNU</title>
-  <link rel="stylesheet" href="presentation-2026.css?v=4">
+  <meta name="theme-color" content="#fbfbf8">
+  <title>같은 말에서 같은 방향으로 · GDGoC KNU</title>
+  <meta name="description" content="문제 정의부터 기획 산출물과 AI 협업 규칙까지. 노션 구성과 원본 참고 이미지로 만든 GDGoC KNU 교육 세션.">
+  <link rel="stylesheet" href="presentation-notion-2026.css?v=6">
+  <script src="presentation-notion-2026.js?v=7" defer></script>
 </head>
 <body>
-  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
-  <main class="deck" id="deck">
-    <section class="slide cover reference" data-title="표지" data-time="0:00" data-chapter="시작" data-accent="blue">
-      <div class="sheet cover-layout"><img class="reference-art" src="assets/session-reference/cover.png" alt="" aria-hidden="true">
-        <div class="cover-copy"><p class="tag">GDGoC KNU 교육 세션</p><span class="accent-rule"></span><h1>같이 만든다는 것은<br>같이 <em>이해</em>하는 것</h1><p class="lead">문제를 화면과 실행 기준으로 옮기는 방법</p></div>
-        <aside class="speaker-note">오늘은 기획에 약 25분, 협업에 약 15분을 씁니다. 신입 부원의 첫 프로젝트라는 가상 사례를 한 흐름으로 따라가겠습니다.</aside>
-      </div>
-    </section>
-
-    <section class="slide" data-title="오늘 가져갈 것" data-time="0:40" data-chapter="시작" data-accent="green">
-      <div class="sheet">
-        <header class="slide-head"><p class="tag">오늘의 흐름</p><span class="accent-rule"></span></header>
-        <div class="content two-col"><h2>기획 25분<br><em>협업 15분</em></h2><ol class="number-list"><li><b>문제와 타깃</b><span>누구의 어떤 상황을 바꿀지</span></li><li><b>흐름과 화면</b><span>사용자가 실제로 겪는 과정</span></li><li><b>팀의 약속</b><span>솔직한 역량 공유와 AI 규칙</span></li></ol></div>
-        <aside class="speaker-note">디자이너와 개발자가 함께 들을 수 있도록 같은 가상 서비스 사례를 사용합니다. 오늘은 도구의 명칭보다 각 문서가 어떤 결정을 돕는지 보겠습니다.</aside>
-      </div>
-    </section>
-
-    <section class="slide reference" data-title="같은 문장, 다른 결과" data-time="2:00" data-chapter="도입" data-accent="red">
-      <div class="sheet"><img class="reference-art" src="assets/session-reference/game_result.png" alt="같은 요청을 다르게 해석한 두 그림">
-        <aside class="speaker-note">같은 말을 듣고도 서로 다른 그림을 떠올립니다. 서비스에서도 비어 있는 조건은 각자의 경험으로 채워집니다. 기획은 그 빈칸을 확인하는 일에서 시작합니다.</aside>
-      </div>
-    </section>
-
-    <section class="slide" data-title="공통 기준과 자유 영역" data-time="4:00" data-chapter="도입" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">기획의 경계</p><span class="accent-rule"></span></header><div class="content">
-        <h2>같아야 할 기준과<br><em>달라도 되는 선택</em></h2>
-        <div class="contrast-layout"><article class="outlined"><h3>팀이 합의할 것</h3><p>사용자 문제, 성공 기준, 필수 흐름, 완료 조건</p></article><article class="outlined neutral-line"><h3>담당자가 제안할 것</h3><p>표현 방식, 세부 인터랙션, 더 나은 구현 방법</p></article></div>
-        <p class="statement">기획의 목적은 <strong>같은 결과를 판단할 기준</strong>을 만드는 것입니다.</p>
-      </div><aside class="speaker-note">모든 화면과 코드를 미리 결정할 필요는 없습니다. 팀이 공유해야 할 판단 기준을 정한 뒤 전문성에 따른 선택은 남겨둡니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="서비스 기획의 순서" data-time="5:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">전체 지도</p><span class="accent-rule"></span></header><div class="content">
-        <h2>문제에서 화면까지<br><em>결정의 순서</em></h2>
-        <ol class="planning-sequence"><li><b>01</b><span>문제와 타깃</span></li><li><b>02</b><span>환경과 범위</span></li><li><b>03</b><span>구조와 사용자 흐름</span></li><li><b>04</b><span>화면과 요구사항</span></li></ol>
-        <p class="statement">근거가 바뀌면 이전 결정으로 돌아가 수정합니다.</p>
-      </div><aside class="speaker-note">두 첨부 자료는 문제·타깃 분석에서 IA, User Flow, Wireframe, 명세로 구체화하는 과정을 소개합니다. 여기서는 초보 팀이 40분 안에 이해할 수 있도록 네 묶음으로 정리했습니다. 참고: 서비스 기획 가이드북, 기획 세션 2회차.</aside></div>
-    </section>
-
-    <section class="slide reference" data-title="관찰과 문제 정의" data-time="7:00" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><img class="reference-art" src="assets/session-reference/problem_definition.png" alt="" aria-hidden="true">
-        <header class="slide-head"><p class="tag">문제 정의</p><span class="accent-rule"></span></header><div class="content split-story"><div><h2>누가, 언제,<br><em>무엇 때문에</em></h2><blockquote>첫 프로젝트를 시작한 신입 부원은 역할과 질문 방식을 몰라 첫 작업을 정하지 못한다.</blockquote></div><div class="stacked-notes"><article><small>관찰</small><p>첫 회의에서 역할 결정이 늦어진다.</p></article><article><small>원인 가설</small><p>역할별 결과물과 요청 가능한 도움이 보이지 않는다.</p></article><article><small>성공</small><p>모두가 첫 작업과 필요한 도움을 설명한다.</p></article></div></div>
-        <aside class="speaker-note">이 사례는 설명을 위한 가상의 문제와 가설입니다. 실제 프로젝트에서는 인터뷰나 관찰로 확인해야 합니다. 참고: 기획 세션 2회차의 문제 상황 정의서 구성.</aside></div>
-    </section>
-
-    <section class="slide" data-title="SWOT 분석" data-time="8:45" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">SWOT · 가상 예시</p><span class="accent-rule"></span></header><div class="content">
-        <h2>우리의 조건과<br><em>바깥의 변화</em></h2>
-        <div class="swot-grid" aria-label="신입 프로젝트 온보딩 서비스의 SWOT 가상 예시">
-          <article><small>내부 · 강점</small><b>S</b><p>운영진이 첫 프로젝트의 질문을 알고 있다.</p></article>
-          <article><small>내부 · 약점</small><b>W</b><p>개발 인력과 검증 기간이 짧다.</p></article>
-          <article><small>외부 · 기회</small><b>O</b><p>새 팀이 생길 때마다 역할 합의가 반복된다.</p></article>
-          <article><small>외부 · 위협</small><b>T</b><p>기존 문서와 메신저만으로도 해결될 수 있다.</p></article>
-        </div>
-        <p class="caption">결정: 전체 협업 도구보다 <strong>첫 회의의 역할 합의</strong>부터 검증한다.</p>
-      </div><aside class="speaker-note">SWOT은 내부 강점·약점과 외부 기회·위협을 구분합니다. 여기 적힌 내용은 가상 사례의 가설입니다. 실제 분석에서는 인터뷰와 현재 운영 방식을 근거로 채우고, 마지막에 범위 결정으로 연결합니다. 참고: 서비스 기획 가이드북의 SWOT 예시.</aside></div>
-    </section>
-
-    <section class="slide" data-title="타깃과 사용 맥락" data-time="10:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">타깃 정의</p><span class="accent-rule"></span></header><div class="content target-layout"><div><h2>사람의 이름보다<br><em>상황을 먼저</em></h2><p class="lead">첫 프로젝트에 참여하는 신입 부원</p></div><dl class="requirement-cases"><div><dt>상황</dt><dd>처음 만난 팀원과 역할을 나눈다.</dd></div><div><dt>목표</dt><dd>내 첫 작업과 도움받을 사람을 안다.</dd></div><div><dt>장벽</dt><dd>각 역할의 결과물이 낯설다.</dd></div><div><dt>검증</dt><dd>실제 신입 부원에게 이 상황을 묻는다.</dd></div></dl></div>
-        <aside class="speaker-note">페르소나를 임의의 나이와 이름으로 채우기 전에 행동 맥락을 확인합니다. 첨부한 기획 세션 2회차도 데이터 수집 후 공통 패턴을 찾는 순서를 제시합니다. 여기서는 실제 인터뷰 전이므로 타깃 가설로 표시합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="IA 정보구조" data-time="12:00" data-chapter="기획" data-accent="green">
-      <div class="sheet"><header class="slide-head"><p class="tag">IA · Information Architecture</p><span class="accent-rule"></span></header><div class="content">
-        <h2>정보를 어디서<br><em>찾게 할 것인가</em></h2>
-        <div class="ia-map" role="tree" aria-label="가상 온보딩 서비스의 페이지 구조"><div class="ia-root" role="treeitem">첫 프로젝트 시작</div><div class="ia-children" role="group"><div role="treeitem"><b>역할 알아보기</b><span>역할별 결과물 · 질문 예시</span></div><div role="treeitem"><b>역할 선택</b><span>선택 가능 여부 · 담당자</span></div><div role="treeitem"><b>팀 결과</b><span>첫 작업 · 필요한 도움</span></div></div></div>
-        <p class="caption">IA는 페이지와 정보의 <strong>위치·깊이</strong>를 정합니다.</p>
-      </div><aside class="speaker-note">IA는 화면과 정보의 계층입니다. 사용자가 어디서 무엇을 찾는지 보여줍니다. 아직 클릭 순서나 예외 분기는 설명하지 않습니다. 두 첨부 자료 모두 IA를 기획 단계에 포함합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="MVP 범위" data-time="13:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">핵심 가설</p><span class="accent-rule"></span></header><div class="content"><h2>첫 회의가 바뀌는지<br><em>작게 확인</em>합니다</h2><div class="hypothesis-layout"><div><small>가설</small><p>역할별 결과물과 질문 예시를 보면 첫 작업을 더 빨리 정할 수 있다.</p></div><div><small>가장 작은 검증</small><p>한 장의 역할 안내로 첫 회의를 진행하고, 모두가 첫 작업을 말할 수 있는지 확인한다.</p></div></div><p class="statement">서비스 구현은 이 검증 결과를 보고 결정합니다.</p></div>
-        <aside class="speaker-note">MVP는 작은 완성품보다 가설을 확인하는 최소 수단으로 설명합니다. 이 사례는 가상의 가설입니다. 성공 기준과 관찰 방법을 정해 실제 첫 회의에서 시험합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="User Flow" data-time="15:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">User Flow</p><span class="accent-rule"></span></header><div class="content"><h2>사용자는 어떤 순서로<br><em>목표에 도달할까</em></h2>
-        <ol class="user-flow" aria-label="신입 부원 역할 결정의 주요 경로"><li><small>진입</small><b>첫 회의 링크</b></li><li><small>탐색</small><b>역할과 결과물 확인</b></li><li><small>행동</small><b>희망 역할 선택</b></li><li><small>결과</small><b>첫 작업 확인</b></li></ol>
-        <p class="caption">User Flow는 <strong>사용자의 목표 경로</strong>를 보여줍니다. 막히는 지점은 다음 단계에서 분기합니다.</p>
-      </div><aside class="speaker-note">User Flow는 사용자가 목표를 달성하는 경로를 간단히 따라갑니다. 우리 사례에서는 첫 작업 확인까지입니다. 상세한 조건과 실패 상태는 다음 Flowchart에서 다룹니다. 참고: 기획 세션 2회차의 User Flow 설명.</aside></div>
-    </section>
-
-    <section class="slide" data-title="Flowchart" data-time="17:30" data-chapter="기획" data-accent="green">
-      <div class="sheet"><header class="slide-head"><p class="tag">Flowchart</p><span class="accent-rule"></span></header><div class="content"><h2>어디에서 결정이<br><em>갈라지는가</em></h2>
-        <div class="flowchart" aria-label="역할 선택의 조건 분기"><div class="flow-main"><span>역할 선택</span><span class="flow-arrow" aria-hidden="true">→</span><strong>모두 선택했나?</strong><span class="flow-arrow flow-yes" aria-label="예">예 →</span><span>팀 결과 확정</span></div><div class="flow-branch"><b>아니요</b><span>미응답·중복 확인</span><span>다시 합의</span></div></div>
-        <p class="caption">Flowchart는 <strong>조건과 예외 처리</strong>를 팀이 함께 결정하게 합니다.</p>
-      </div><aside class="speaker-note">첨부 가이드북은 Flowchart를 단계와 판단을 시각화한 문서로 설명합니다. 이 예시에서는 모두 선택했는지가 결정 노드입니다. '아니요'일 때 미응답과 중복을 어떻게 표시하고 다시 합의할지 디자이너와 개발자가 함께 정합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="Wireframe" data-time="19:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">Wireframe</p><span class="accent-rule"></span></header><div class="content wireframe-layout"><div><h2>화면에 무엇을<br><em>보여줄까</em></h2><p class="lead">색과 장식 전에 정보의 순서부터 확인합니다.</p><ul class="wire-notes"><li>역할 설명이 선택보다 먼저 보이는가?</li><li>담당자와 선택 상태를 구별할 수 있는가?</li><li>확정할 수 없을 때 이유가 보이는가?</li></ul></div><div class="wireframe" aria-label="역할 선택 화면의 낮은 충실도 와이어프레임"><div class="wire-top">첫 프로젝트 <span>팀 이름</span></div><h3>맡고 싶은 역할을 선택하세요</h3><p>역할별 결과물과 필요한 도움을 확인하세요.</p><div class="wire-option"><b>화면 설계</b><span>첫 화면과 오류 상태 정리</span><small>선택 가능</small></div><div class="wire-option"><b>API 구현</b><span>역할 저장과 조회</span><small>선택 가능</small></div><div class="wire-action">팀 결과 확인</div><div class="wire-error">미응답자가 있으면 확정 전 안내</div></div></div>
-        <aside class="speaker-note">와이어프레임은 화면의 기본 골격입니다. 첨부 가이드북은 레이아웃, 컴포넌트, 이동과 표시할 데이터를 확인하라고 설명합니다. 이 예시에서는 역할별 결과물, 선택 상태, 확정 불가 안내를 먼저 배치합니다. 색이나 완성된 비주얼은 이후에 정합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="요구사항과 완료 기준" data-time="21:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">요구사항 명세</p><span class="accent-rule"></span></header><div class="content requirement-layout"><div><h2>화면과 동작을<br><em>검증 가능한 문장</em>으로</h2><p class="lead">한 항목을 읽고 같은 결과를 예상할 수 있어야 합니다.</p></div><dl class="requirement-cases"><div><dt>입력</dt><dd>사용자는 희망 역할 하나를 선택한다.</dd></div><div><dt>정상</dt><dd>팀원 모두가 선택하면 담당자와 첫 작업을 표시한다.</dd></div><div><dt>예외</dt><dd>미응답·중복이 있으면 확정을 막고 이유를 표시한다.</dd></div><div><dt>완료</dt><dd>팀원이 각자의 담당 결과물을 설명할 수 있다.</dd></div></dl></div>
-        <aside class="speaker-note">두 첨부 자료의 기능 명세서와 SRS를 한 장의 인수 기준으로 옮겼습니다. 구체적 입력, 정상 결과, 예외, 완료 기준을 적으면 디자인과 구현, 테스트의 기준이 됩니다. 예시는 가상 서비스의 요구사항 초안입니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="우선순위와 범위 결정" data-time="23:30" data-chapter="기획" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">범위 결정</p><span class="accent-rule"></span></header><div class="content"><h2>이번에 만들 것과<br><em>미룰 것의 근거</em></h2><div class="priority-table" role="table" aria-label="가상 서비스의 범위 결정 예시"><div class="priority-row priority-head" role="row"><span role="columnheader">후보</span><span role="columnheader">판단 근거</span><span role="columnheader">결정</span></div><div class="priority-row" role="row"><b role="cell">역할 선택과 첫 작업</b><span role="cell">목표 행동을 직접 확인</span><strong role="cell">이번 범위</strong></div><div class="priority-row" role="row"><b role="cell">역할·완료 기준 합의</b><span role="cell">다른 작업의 선행 조건</span><strong role="cell">먼저 결정</strong></div><div class="priority-row" role="row"><b role="cell">프로필 꾸미기</b><span role="cell">첫 회의 검증과 무관</span><strong role="cell">보류</strong></div></div><p class="statement">판단 질문: <strong>목표 행동을 확인하는 데 필요한가? 다른 작업을 기다리게 하는가?</strong></p></div>
-        <aside class="speaker-note">여기까지가 기획 파트입니다. 추정 작업량과 팀원의 가능한 시간을 더한 뒤 범위를 확정합니다. 모든 후보를 같은 우선순위로 두지 않으며, 보류한 이유도 문서에 남깁니다.</aside></div>
-    </section>
-
-    <section class="slide reference" data-title="협업이 어려워지는 순간" data-time="25:30" data-chapter="협업" data-accent="red">
-      <div class="sheet"><img class="reference-art" src="assets/session-reference/collaboration-failure-pdf.png" alt="" aria-hidden="true"><header class="slide-head"><p class="tag">협업 사례</p><span class="accent-rule"></span></header><div class="content"><h2>보이지 않던 차이가<br><em>과부하로 이어집니다</em></h2></div><aside class="speaker-note">이제 협업 이야기로 넘어갑니다. 일정표만 잘 짜도 해결되는 문제는 아닙니다. 경험과 가능한 시간, 막힌 일을 일찍 말하지 못하면 한 사람에게 일이 몰리고 완료 기준도 갈립니다. 사례는 설명용으로 재구성했습니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="실력과 도움을 솔직하게 말하기" data-time="27:30" data-chapter="협업" data-accent="green">
-      <div class="sheet"><header class="slide-head"><p class="tag">첫 회의의 대화</p><span class="accent-rule"></span></header><div class="content"><h2>“할 수 있어요”보다<br><em>어디까지 해봤는지</em></h2><div class="honesty-list"><div><b>해본 것</b><span>“화면은 만들었고 오류 상태는 처음입니다.”</span></div><div><b>도움이 필요한 것</b><span>“API 명세가 있으면 연결할 수 있습니다.”</span></div><div><b>작게 확인할 것</b><span>“핵심 화면 하나를 먼저 만들어 같이 보겠습니다.”</span></div></div><p class="caption">AI가 만든 결과도 <strong>내가 설명하고 고칠 수 있는 범위</strong>로 말합니다.</p></div>
-        <aside class="speaker-note">실력을 사람끼리 등급으로 나누려는 자리가 아닙니다. 경험의 근거와 도움이 필요한 부분을 말하면 역할과 리뷰를 정할 수 있습니다. 디자이너는 핵심 화면 한 장, 개발자는 작은 동작이나 인터페이스 예시처럼 역할에 맞는 산출물로 확인합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="규칙 없는 AI 작업" data-time="29:30" data-chapter="협업" data-accent="red">
-      <div class="sheet"><header class="slide-head"><p class="tag">AI 작업의 위험</p><span class="accent-rule"></span></header><div class="content ai-risk-layout"><div><h2>AI도 작업 범위를<br><em>알아야 합니다</em></h2><blockquote class="prompt-quote">“로그인을 구현하고 관련 코드를 전부 정리해줘.”</blockquote></div><ul class="risk-list"><li>다른 팀원의 파일 수정</li><li>공개 API와 타입 변경</li><li>요청하지 않은 리팩터링</li></ul></div><aside class="speaker-note">AI가 작업을 빠르게 만들지만 변경 범위를 넓게 해석할 수 있습니다. 디자인 파일이나 코드 모두 누가 책임지는 영역인지, 어떤 변경을 먼저 합의해야 하는지 정합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="AI 작업 규칙" data-time="31:30" data-chapter="협업" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">팀 공통 규칙</p><span class="accent-rule"></span></header><div class="content"><h2>세 가지만 먼저<br><em>공유합니다</em></h2><div class="rules-three"><div><b>수정 범위</b><span>이번 Issue의 파일과 금지 영역</span></div><div><b>팀 기준</b><span>제품 목표, UI·코드 규칙, 완료 조건</span></div><div><b>검증</b><span>결과를 설명하고 diff·화면·테스트 확인</span></div></div><p class="caption"><code>AGENTS.md</code>·<code>CLAUDE.md</code>는 팀 문서를 가리키는 입구로 활용할 수 있습니다.</p></div>
-        <aside class="speaker-note">팀 규칙은 기술 도구별로 다르게 두지 않습니다. 공통 문서를 한곳에서 관리하고 AI용 파일은 그 문서를 참조하게 합니다. 긴 프롬프트보다 범위, 기준, 검증이 명확한지가 중요합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="작은 작업과 검토" data-time="34:00" data-chapter="협업" data-accent="green">
-      <div class="sheet"><header class="slide-head"><p class="tag">작업 단위</p><span class="accent-rule"></span></header><div class="content"><h2>작게 맡고<br><em>함께 확인합니다</em></h2><ol class="review-three"><li><b>Issue</b><span>문제와 완료 조건을 적습니다.</span></li><li><b>작업</b><span>담당 범위 안에서 결과를 만듭니다.</span></li><li><b>리뷰</b><span>실제 화면·동작과 예상 밖 변경을 확인합니다.</span></li></ol><p class="statement">막히면 늦게 보고하지 말고 <strong>지금 필요한 도움</strong>을 말합니다.</p></div>
-        <aside class="speaker-note">이 과정은 복잡한 절차가 아닙니다. 작은 Issue에서 목표와 완료 기준을 확인하고, 결과를 서로 보여주면 됩니다. 일정 조율 자체를 길게 다루기보다 막힌 사실을 솔직히 공유하는 데 집중합니다.</aside></div>
-    </section>
-
-    <section class="slide" data-title="프로젝트 시작 점검" data-time="36:20" data-chapter="정리" data-accent="blue">
-      <div class="sheet"><header class="slide-head"><p class="tag">한 장의 점검표</p><span class="accent-rule"></span></header><div class="content"><h2>시작 전에<br><em>여기까지 합의</em></h2><ol class="start-checklist"><li><b>문제와 사용자</b><span>누가 어떤 상황에서 막히는가?</span></li><li><b>핵심 흐름</b><span>어떤 행동으로 성공을 확인하는가?</span></li><li><b>화면과 예외</b><span>사용자가 무엇을 보고, 막힐 때 어떻게 되는가?</span></li><li><b>작업과 규칙</b><span>누가 어디까지 맡고 어떻게 검토하는가?</span></li></ol></div><aside class="speaker-note">네 항목에 바로 답할 수 없다면 그 빈칸을 먼저 확인합니다. 오늘 본 SWOT, IA, User Flow, Flowchart, Wireframe은 모두 이 질문을 더 명확히 하기 위한 도구입니다.</aside></div>
-    </section>
-
-    <section class="slide closing reference" data-title="마무리" data-time="38:30" data-chapter="정리" data-accent="blue">
-      <div class="sheet closing-layout"><img class="reference-art" src="assets/session-reference/closing.png" alt="" aria-hidden="true"><p class="tag">GDGoC KNU 교육 세션</p><span class="accent-rule"></span><h1>함께 이해하는<br><em>첫 질문</em></h1><blockquote>“무엇을 만들까?” 전에<br>“무엇을 함께 이해해야 할까?”</blockquote><aside class="speaker-note">기획 자료의 이름보다 팀이 같은 문제, 사용자 행동, 화면 상태, 완료 기준을 공유했는지가 중요합니다. 솔직한 역량 공유와 AI 작업 규칙이 그 이해를 실행에 연결합니다. 감사합니다.</aside></div>
-    </section>
-  </main>
-  <div class="hud" aria-label="발표 조작"><button id="prev" type="button" aria-label="이전 슬라이드">←</button><span id="counter" aria-live="polite">01 / 22</span><button id="notes" type="button" aria-label="발표자 노트 열기">N</button><button id="overview" type="button" aria-label="전체 슬라이드 보기">O</button><button id="fullscreen" type="button" aria-label="전체 화면">F</button><button id="next" type="button" aria-label="다음 슬라이드">→</button></div>
-  <dialog id="notesDialog"><header><h3 id="notesTitle">발표자 노트</h3><button type="button" data-close="notesDialog" aria-label="닫기">×</button></header><div id="notesBody"></div></dialog>
-  <dialog id="overviewDialog"><header><h3>전체 슬라이드</h3><button type="button" data-close="overviewDialog" aria-label="닫기">×</button></header><div class="overview-grid" id="overviewGrid"></div></dialog>
-  <script src="presentation-2026.js?v=5"></script>
+  <a class="skip" href="#deck">발표자료 본문으로</a>
+  <main id="deck" aria-label="기획과 협업 발표자료"></main>
+  <nav class="controls" aria-label="발표 조작">
+    <button id="prev" aria-label="이전 슬라이드">←</button>
+    <output id="counter" aria-live="polite"></output>
+    <button id="overview" aria-label="목차 열기" title="목차 (O)">목차</button>
+    <button id="notes" aria-label="발표자 노트 열기" title="발표자 노트 (N)">노트</button>
+    <button id="fullscreen" aria-label="전체 화면" title="전체 화면 (F)">전체화면</button>
+    <button id="next" aria-label="다음 슬라이드">→</button>
+  </nav>
+  <dialog id="notesDialog" aria-labelledby="notesTitle"><header><h2 id="notesTitle">발표자 노트</h2><button data-close aria-label="닫기">×</button></header><div id="notesBody"></div></dialog>
+  <dialog id="overviewDialog" aria-labelledby="overviewTitle"><header><h2 id="overviewTitle">전체 슬라이드</h2><button data-close aria-label="닫기">×</button></header><div id="overviewGrid"></div><p class="shortcut">← → 이동 · O 목차 · N 노트 · F 전체화면 · Esc 닫기</p></dialog>
+  <dialog id="imageDialog" aria-labelledby="imageTitle"><header><h2 id="imageTitle">참고 이미지</h2><div class="image-actions"><button id="zoomSize" aria-pressed="false">원본 크기</button><a id="imageOriginal" target="_blank" rel="noopener">이미지만 열기 ↗</a><button data-close aria-label="확대 이미지 닫기">×</button></div></header><div id="imageViewport"><img id="zoomImage" alt=""></div><p>세부 글씨는 ‘원본 크기’로 전환한 뒤 가로·세로로 스크롤해 확인하세요.</p></dialog>
+  <noscript>이 발표자료의 탐색에는 JavaScript가 필요합니다.</noscript>
 </body>
 </html>
