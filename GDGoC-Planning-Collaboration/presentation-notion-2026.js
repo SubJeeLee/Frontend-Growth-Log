@@ -1,23 +1,23 @@
 const sourceURL = 'https://app.notion.com/p/3eada4f697828068b8a8f803d065037e';
 const imageRoot = 'assets/notion-0930/';
-const imageSrc = file => imageRoot + (file.includes('.') && !/^\d{2}\.\d{2}\.\d{2}$/.test(file) ? file : file + '.webp');
+const imageSrc = file => imageRoot + (file.includes('.') && !/^\d{2}\.\d{2}\.\d{2}$/.test(file) ? file : file + '.webp') + '?v=8';
 const slides = [
   {
-    "file": "11.44.38",
+    "file": "cover-hd.png",
     "title": "같은 말에서 같은 방향으로",
     "chapter": "도입",
     "time": "0:00",
     "note": "오늘은 기획과 협업을 이야기합니다. AI를 활용해 구현을 빠르게 시도할 수 있어도 어떤 문제를 풀고 무엇을 확인할지는 팀이 결정해야 합니다. 문제 정의부터 화면과 기능의 기준을 만드는 과정, 그리고 팀이 그 기준을 함께 사용하는 방법을 살펴보겠습니다."
   },
   {
-    "file": "11.52.18",
+    "file": "results-hd.png",
     "title": "왜 결과가 다를까?",
     "chapter": "문제 정의",
     "time": "1:00",
     "note": "같은 요청을 받은 두 팀이 다른 결과를 만드는 장면입니다. 정의하지 않은 빈칸은 각자의 경험으로 채워집니다. 오늘의 출발점은 더 자세한 기능 목록보다 어떤 문제를 함께 풀고 있는지 합의하는 것입니다. 게임을 진행하지 않고 그림을 비교하며 이야기합니다."
   },
   {
-    "file": "11.52.47",
+    "file": "problem-hd.png",
     "title": "관찰과 해결책의 차이",
     "chapter": "문제 정의",
     "time": "2:00",
@@ -338,6 +338,13 @@ function openImage(file,title) {
   document.getElementById('imageViewport').scrollTo(0,0);
 }
 document.querySelectorAll('[data-image]').forEach(button => {
+  const img=button.querySelector('img');
+  const limitSourceSize=()=>{
+    const sheet=button.closest('.source-sheet');
+    if(sheet && img.naturalWidth) sheet.style.setProperty('--source-width',img.naturalWidth+'px');
+  };
+  img.addEventListener('load',limitSourceSize);
+  if(img.complete) limitSourceSize();
   button.addEventListener('click',()=>openImage(button.dataset.image,button.querySelector('img').alt));
   button.querySelector('img').addEventListener('error',()=>{
     button.classList.add('image-error');

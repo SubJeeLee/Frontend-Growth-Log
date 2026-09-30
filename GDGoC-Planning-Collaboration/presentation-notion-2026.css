@@ -70,7 +70,7 @@ pre{margin:0;white-space:pre-wrap;font:1.35cqw/1.55 ui-monospace,SFMono-Regular,
 .reference-intro p{font-size:1.3cqw;line-height:1.5;color:var(--muted)}
 .reference-visual{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr)}
 .reference-image{display:block;position:relative;width:100%;height:100%;min-width:0;min-height:0;padding:0;border:0;background:transparent;cursor:zoom-in}
-.reference-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.reference-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:scale-down;display:block}
 .zoom-hint{position:absolute;right:.7cqw;bottom:.7cqw;background:#fff;color:#202124;border:1px solid #bac2ca;border-radius:3px;padding:.35cqw .6cqw;font-size:1cqw;opacity:0;pointer-events:none}
 .reference-image:hover .zoom-hint,.reference-image:focus-visible .zoom-hint{opacity:1}
 .image-error .zoom-hint{opacity:1;color:#b42318}
@@ -90,6 +90,8 @@ pre{margin:0;white-space:pre-wrap;font:1.35cqw/1.55 ui-monospace,SFMono-Regular,
 .roadmap-items.four{grid-template-columns:repeat(4,minmax(0,1fr))}
 .roadmap-items span{background:#fff;padding:1cqw .4cqw;text-align:center;border:1px solid #c1cbd9;font-size:1.45cqw;font-weight:650}
 .roadmap-down{text-align:center;font-size:2.6cqw;line-height:1}
+/* Keep raster slides comfortably below their native resolution on large displays. */
+.sheet.source-sheet{max-width:min(1440px,var(--source-width,1440px))}
 .source-sheet>.reference-image{position:absolute;inset:0}
 /* Presentation controls and image reader live outside the 16:9 canvas. */
 .controls{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);z-index:30;display:flex;align-items:center;gap:3px;background:#202124;color:#fff;padding:4px 6px;border-radius:9px}
