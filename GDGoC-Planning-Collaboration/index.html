@@ -7,7 +7,7 @@
   <title>같은 말에서 같은 방향으로 · GDGoC KNU</title>
   <meta name="description" content="문제 정의부터 기획 산출물과 AI 협업 규칙까지. 노션 구성과 원본 참고 이미지로 만든 GDGoC KNU 교육 세션.">
   <link rel="stylesheet" href="presentation-notion-2026.css?v=8">
-  <script src="presentation-notion-2026.js?v=8" defer></script>
+  <script src="presentation-notion-2026.js?v=9" defer></script>
 </head>
 <body>
   <a class="skip" href="#deck">발표자료 본문으로</a>
@@ -16,12 +16,10 @@
     <button id="prev" aria-label="이전 슬라이드">←</button>
     <output id="counter" aria-live="polite"></output>
     <button id="overview" aria-label="목차 열기" title="목차 (O)">목차</button>
-    <button id="notes" aria-label="발표자 노트 열기" title="발표자 노트 (N)">노트</button>
     <button id="fullscreen" aria-label="전체 화면" title="전체 화면 (F)">전체화면</button>
     <button id="next" aria-label="다음 슬라이드">→</button>
   </nav>
-  <dialog id="notesDialog" aria-labelledby="notesTitle"><header><h2 id="notesTitle">발표자 노트</h2><button data-close aria-label="닫기">×</button></header><div id="notesBody"></div></dialog>
-  <dialog id="overviewDialog" aria-labelledby="overviewTitle"><header><h2 id="overviewTitle">전체 슬라이드</h2><button data-close aria-label="닫기">×</button></header><div id="overviewGrid"></div><p class="shortcut">← → 이동 · O 목차 · N 노트 · F 전체화면 · Esc 닫기</p></dialog>
+  <dialog id="overviewDialog" aria-labelledby="overviewTitle"><header><h2 id="overviewTitle">전체 슬라이드</h2><button data-close aria-label="닫기">×</button></header><div id="overviewGrid"></div><p class="shortcut">← → 이동 · O 목차 · F 전체화면 · Esc 닫기</p></dialog>
   <dialog id="imageDialog" aria-labelledby="imageTitle"><header><h2 id="imageTitle">참고 이미지</h2><div class="image-actions"><button id="zoomSize" aria-pressed="false">원본 크기</button><a id="imageOriginal" target="_blank" rel="noopener">이미지만 열기 ↗</a><button data-close aria-label="확대 이미지 닫기">×</button></div></header><div id="imageViewport"><img id="zoomImage" alt=""></div><p>세부 글씨는 ‘원본 크기’로 전환한 뒤 가로·세로로 스크롤해 확인하세요.</p></dialog>
   <noscript>이 발표자료의 탐색에는 JavaScript가 필요합니다.</noscript>
 </body>

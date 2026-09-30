@@ -104,8 +104,6 @@ dialog::backdrop{background:#14191dbb}
 dialog header{position:sticky;top:0;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 20px;border-bottom:1px solid var(--line);z-index:1}
 dialog h2{font-size:21px;line-height:1.4}
 dialog button[data-close]{font-size:28px;background:none;border:0;min-width:44px;min-height:44px;padding:0}
-#notesBody{padding:24px;font-size:18px;line-height:1.8;white-space:pre-wrap}
-#notesBody a{color:#2163c5}
 #overviewGrid{padding:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 #overviewGrid button{border:1px solid var(--line);background:#fff;text-align:left;padding:14px;line-height:1.45;border-radius:4px}
 #overviewGrid button[aria-current=true]{border:2px solid var(--blue);background:var(--soft)}
